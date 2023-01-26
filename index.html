@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikha's Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Balsamiq+Sans?query=bal">
+<link rel="stylesheet" href="" class="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Balsamiq Sans';
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('pics/hdd.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 100px;
+        top: 20px;
+        background-color: black;
+        /* margin:18px; */
+        display: inline-block;
+        /* border: 2px solid red; */
+        font-size: 16px;
+
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* margin: 18px; */
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .btn {
+        font-family: 'Balsamiq Sans';
+        margin: 0px 9px;
+        background-color: black;
+        color: whitesmoke;
+        padding: 4px 14px;
+        border: 2px solid rgb(99, 98, 98);
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(71, 69, 69);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 3px 3px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .container {
+        /* border: 2px solid rgb(136, 134, 134); */
+        margin: 2px 10px;
+        padding: 10px;
+        width: 33%;
+        border-radius: 28px;
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 2%;
+    }
+    .form-group input{
+        font-family: 'Balsamiq Sans';
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 6px;
+        margin: 5px auto;
+        border: 2px solid rgb(65, 63, 63);
+    }
+    .container h1{
+        color:aliceblues;
+    text-align: center;
+        background-color: black;
+    }
+    .container button{
+        display: block;
+        margin:13px auto; /*margin: top horizontal */
+        /* margin-right: 34px; */
+        width: 260px;
+        text-align: center;
+        padding: 2px;
+        
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="pics/logoo.jpg" alt="">
+            <div>Shikha Fitness </div>
+        </div>
+        <div class="mid">
+            <!-- mid for navigation bar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best  gym of Orissa now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contact No:">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email-id:">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
